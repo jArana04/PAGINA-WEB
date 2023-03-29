@@ -1,0 +1,58 @@
+/*CODIGO DE menu desplegable basico*/
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* hace que los cuadraditos esten uno al lado del otro*/
+li {
+  float: left;
+}
+
+
+/* hace que cuando tenga el cursor arriba de un cuadradito se pinte de un color*/
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(219, 182, 182);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+/*dropdown-content y dropdown content sirven para los proximos drops y que cuando yo pase el cursor por arriba se muestren las opciones*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
+
+/* la de color a las letras al cuadradito de los drops*/
+.dropdown-content a {
+  color: rgb(209, 209, 209);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+/* la de color al cuadradito de los drops*/
+.dropdown-content a:hover {
+  background-color: #000000;
+}
+
+
+/* la da forma al cuadradito de los drops*/
+.dropdown:hover .dropdown-content {
+  display: block;
+}
